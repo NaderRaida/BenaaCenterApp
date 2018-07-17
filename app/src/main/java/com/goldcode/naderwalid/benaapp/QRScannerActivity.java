@@ -52,7 +52,6 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
     @Override
     protected void onResume() {
         super.onResume();
-
         if (qrCodeReaderView != null) {
             qrCodeReaderView.startCamera();
         }
