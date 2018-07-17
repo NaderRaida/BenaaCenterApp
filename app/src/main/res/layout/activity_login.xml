@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.goldcode.naderwalid.benaapp.LoginActivity"
+    android:background="@drawable/login_background"
+    >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="تسجيل الدخول"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+
+        android:id="@+id/mobile_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="79dp"
+        android:text="رقم الجوال :"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:inputType="phone"
+        android:id="@+id/edit_txt_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mobile_txt"
+        android:layout_alignBottom="@+id/mobile_txt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:hint="@string/mobile_hint"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#d2cecf"
+        android:backgroundTint="#c0bbbc"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_txt_mobile"
+        android:text="دخول"
+        android:layout_marginTop="130dp"
+        android:textSize="27sp"
+        android:background="@drawable/custom_btn_login"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linear_layout"
+    android:layout_below="@+id/button"
+android:paddingStart="30dp"
+    >
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/custom_divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_marginStart="5dp"
+        android:paddingTop="35dp"
+        />
+
+<View
+    android:layout_width="150dp"
+    android:layout_height="3dp"
+    android:text="   "
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="43dp"
+    android:background="@drawable/custom_divider"/>
+</LinearLayout>
+
+<Button
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text=" تسجيل عضوية"
+    android:layout_below="@+id/linear_layout"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:id="@+id/button2"
+    android:textSize="27sp"
+    android:background="@drawable/custom_btn_signup"/>
+
+</RelativeLayout>

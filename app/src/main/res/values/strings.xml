@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">بناء الشبابي</string>
+    <string name="mobile_hint">Enter your mobile number</string>
+    <string name="fragment_home">الرئيسية</string>
+    <string name="fragment_news">الأخبار</string>
+    <string name="fragment_activities">الغعاليات</string>
+
+
+
+</resources>

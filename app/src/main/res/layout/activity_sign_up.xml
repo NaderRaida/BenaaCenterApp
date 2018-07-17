@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.goldcode.naderwalid.benaapp.SignUpActivity"
+    android:background="@drawable/signup_background">
+    <TextView
+        android:id="@+id/title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="تسجيل عضوية"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/title_label"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="70dp"
+        android:text="الاسم : "
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/name_edit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/name_label"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/name_label"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="أدخل اسمك "
+        android:textColorHint="@color/white"
+        android:backgroundTint="#c0bbbc"
+        />
+
+    <TextView
+        android:id="@+id/mobile_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mobile_edit_txt"
+        android:layout_alignBottom="@+id/mobile_edit_txt"
+        android:layout_toEndOf="@+id/mobile_edit_txt"
+        android:text="رقم الجوال :"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/mobile_edit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name_edit_txt"
+        android:layout_below="@+id/name_edit_txt"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="أدخل رقم الجوال "
+        android:textColorHint="@color/white"
+        android:backgroundTint="#c0bbbc"
+         />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email_edit_txt"
+        android:layout_alignBottom="@+id/email_edit_txt"
+        android:layout_alignEnd="@+id/mobile_label"
+        android:text="الايميل :"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/email_edit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mobile_edit_txt"
+        android:layout_below="@+id/mobile_edit_txt"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="#c0bbbc"
+        android:ems="10"
+        android:hint="أدخل ايميلك "
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text=" تسجيل"
+        android:layout_below="@+id/email_edit_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/button2"
+        android:textSize="27sp"
+        android:background="@drawable/custom_btn_signup"/>
+
+
+</RelativeLayout>
