@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     Intent sign_up_btn_intent;
     Intent login_btn_intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +26,8 @@ public class LoginActivity extends AppCompatActivity {
 //            actionBar.hide();
 //
 //        }
-        TextView title_view =findViewById(R.id.txt_title);
-        TextView mobile_label =findViewById(R.id.mobile_txt);
+        TextView title_view = findViewById(R.id.txt_title);
+        TextView mobile_label = findViewById(R.id.mobile_txt);
 
         final EditText editText = findViewById(R.id.edit_txt_mobile);
         final Button login_btn = findViewById(R.id.button);
@@ -42,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         signUp_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sign_up_btn_intent = new Intent(getApplicationContext(),SignUpActivity.class);
+                sign_up_btn_intent = new Intent(getApplicationContext(), SignUpActivity.class);
                 startActivity(sign_up_btn_intent);
                 finish();
             }
@@ -51,12 +52,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(editText.getText().toString().equals("0592766119")){
-                    login_btn_intent = new Intent(getApplicationContext(),HomeActivity.class);
+                if (editText.getText().toString().equals("0592766119")) {
+                    login_btn_intent = new Intent(getApplicationContext(), HomeActivity.class);
                     startActivity(login_btn_intent);
                     finish();
-                }else{
-                    Toast.makeText(getApplicationContext(),"this no equals",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "this no equals", Toast.LENGTH_LONG).show();
                 }
 
             }

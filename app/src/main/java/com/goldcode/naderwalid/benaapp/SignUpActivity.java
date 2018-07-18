@@ -8,7 +8,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class SignUpActivity extends AppCompatActivity {
-    TextView title_label,name_label,phone_label,email_label;
+    TextView title_label, name_label, phone_label, email_label;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intent);
         finish();
         overridePendingTransition(R.anim.slide_out_left, R.anim.slide_in_right);

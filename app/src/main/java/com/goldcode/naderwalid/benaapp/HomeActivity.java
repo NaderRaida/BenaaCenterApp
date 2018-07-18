@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
 //        toolbar.setPaddingRelative(350,0,0,0);
 //        setSupportActionBar(toolbar);
         ViewPager viewPager = findViewById(R.id.viewPager);
-        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(),this));
+        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), this));
         viewPager.setCurrentItem(0);
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);

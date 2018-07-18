@@ -33,6 +33,7 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
     String code;
 
     Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,19 +70,21 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
     // Called when a QR is decoded
     // "text" : the text encoded in QR
     // "points" : points where QR control points are placed
-    @Override public void onQRCodeRead(String text, PointF[] points) {
+    @Override
+    public void onQRCodeRead(String text, PointF[] points) {
         resultTextView.setText(text);
         pointsOverlayView.setPoints(points);
-        code=text;
+        code = text;
         qrCodeReaderView.stopCamera();
-        intent = new Intent(getApplicationContext(),LoginActivity.class);
-        intent.putExtra("contentOfQR",code);
+        intent = new Intent(getApplicationContext(), LoginActivity.class);
+        intent.putExtra("contentOfQR", code);
         startActivity(intent);
         finish();
     }
 
-    @Override public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-                                                     @NonNull int[] grantResults) {
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
         if (requestCode != MY_PERMISSION_REQUEST_CAMERA) {
             return;
         }
@@ -100,8 +103,9 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
         if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
             Snackbar.make(mainLayout, "Camera access is required to display the camera preview.",
                     Snackbar.LENGTH_INDEFINITE).setAction("OK", new View.OnClickListener() {
-                @Override public void onClick(View view) {
-                    ActivityCompat.requestPermissions(QRScannerActivity.this, new String[] {
+                @Override
+                public void onClick(View view) {
+                    ActivityCompat.requestPermissions(QRScannerActivity.this, new String[]{
                             Manifest.permission.CAMERA
                     }, MY_PERMISSION_REQUEST_CAMERA);
                 }
@@ -109,7 +113,7 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
         } else {
             Snackbar.make(mainLayout, "Permission is not available. Requesting camera permission.",
                     Snackbar.LENGTH_LONG).show();
-            ActivityCompat.requestPermissions(this, new String[] {
+            ActivityCompat.requestPermissions(this, new String[]{
                     Manifest.permission.CAMERA
             }, MY_PERMISSION_REQUEST_CAMERA);
         }
@@ -118,15 +122,15 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
     private void initQRCodeReaderView() {
         View content = getLayoutInflater().inflate(R.layout.qrscanner_content, mainLayout, true);
 
-        qrCodeReaderView =  content.findViewById(R.id.qrdecoderview);
-        resultTextView =  content.findViewById(R.id.result_text_view);
-        pointsOverlayView =  content.findViewById(R.id.points_overlay_view);
+        qrCodeReaderView = content.findViewById(R.id.qrdecoderview);
+        resultTextView = content.findViewById(R.id.result_text_view);
+        pointsOverlayView = content.findViewById(R.id.points_overlay_view);
         btn = content.findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 qrCodeReaderView.stopCamera();
-                intent = new Intent(getApplicationContext(),LoginActivity.class);
+                intent = new Intent(getApplicationContext(), LoginActivity.class);
 //                intent.putExtra("contentOfQR",code);
                 startActivity(intent);
                 finish();
