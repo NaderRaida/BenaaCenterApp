@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.goldcode.naderwalid.benaapp.ActivitiesFragment;
+import com.goldcode.naderwalid.benaapp.EventsFragment;
 import com.goldcode.naderwalid.benaapp.HomeFragment;
 import com.goldcode.naderwalid.benaapp.NewsFragment;
 import com.goldcode.naderwalid.benaapp.R;
@@ -16,10 +16,10 @@ import com.goldcode.naderwalid.benaapp.R;
  */
 
 public class MyPagerAdapter extends FragmentStatePagerAdapter {
-    private  final int HOME_FRAGMENT = 0;
-    private  final int NEWS_FRAGMENT = 1;
-    private  final int ACTIVITIES_FRAGMENT = 2;
-    private  final int PAGES_COUNT = 3;
+    private final int HOME_FRAGMENT = 0;
+    private final int NEWS_FRAGMENT = 1;
+    private final int EVENTS_FRAGMENT = 2;
+    private final int PAGES_COUNT = 3;
     private final Context context;
 
     public MyPagerAdapter(FragmentManager fm, Context context) {
@@ -30,15 +30,15 @@ public class MyPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Fragment fragment = null;
-        switch (position){
+        switch (position) {
             case HOME_FRAGMENT:
                 fragment = new HomeFragment();
                 break;
             case NEWS_FRAGMENT:
                 fragment = new NewsFragment();
                 break;
-            case ACTIVITIES_FRAGMENT :
-                fragment = new ActivitiesFragment();
+            case EVENTS_FRAGMENT:
+                fragment = new EventsFragment();
                 break;
         }
         return fragment;
@@ -53,14 +53,14 @@ public class MyPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         String fragment = "";
-        switch (position){
+        switch (position) {
             case HOME_FRAGMENT:
                 fragment = context.getString(R.string.fragment_home);
                 break;
             case NEWS_FRAGMENT:
                 fragment = context.getString(R.string.fragment_news);
                 break;
-            case ACTIVITIES_FRAGMENT :
+            case EVENTS_FRAGMENT:
                 fragment = context.getString(R.string.fragment_activities);
                 break;
         }
