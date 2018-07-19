@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/signup_background"
-    tools:context="com.goldcode.naderwalid.benaapp.SignUpActivity">
+    tools:context="com.goldcode.naderwalid.benaapp.Activities.SignUpActivity">
 
     <TextView
         android:id="@+id/title_label"

@@ -1,8 +1,7 @@
-package com.goldcode.naderwalid.benaapp;
+package com.goldcode.naderwalid.benaapp.Activities;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.goldcode.naderwalid.benaapp.R;
 
 
 public class LoginActivity extends AppCompatActivity {

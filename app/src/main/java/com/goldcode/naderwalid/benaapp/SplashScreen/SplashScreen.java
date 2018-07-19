@@ -1,9 +1,10 @@
-package com.goldcode.naderwalid.benaapp;
+package com.goldcode.naderwalid.benaapp.SplashScreen;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 
 import com.daimajia.androidanimations.library.Techniques;
+import com.goldcode.naderwalid.benaapp.Activities.QRScannerActivity;
+import com.goldcode.naderwalid.benaapp.R;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;

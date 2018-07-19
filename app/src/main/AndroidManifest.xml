@@ -15,17 +15,17 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QRScannerActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Activities.QRScannerActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".SplashScreen.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".Activities.SignUpActivity" />
+        <activity android:name=".Activities.HomeActivity"></activity>
     </application>
 
 </manifest>

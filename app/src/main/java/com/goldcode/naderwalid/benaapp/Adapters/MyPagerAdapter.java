@@ -6,9 +6,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.goldcode.naderwalid.benaapp.EventsFragment;
-import com.goldcode.naderwalid.benaapp.HomeFragment;
-import com.goldcode.naderwalid.benaapp.NewsFragment;
+import com.goldcode.naderwalid.benaapp.Fragments.EventsFragment;
+import com.goldcode.naderwalid.benaapp.Fragments.HomeFragment;
+import com.goldcode.naderwalid.benaapp.Fragments.NewsFragment;
 import com.goldcode.naderwalid.benaapp.R;
 
 /**

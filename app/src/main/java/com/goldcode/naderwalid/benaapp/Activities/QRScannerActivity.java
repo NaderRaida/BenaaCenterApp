@@ -1,4 +1,4 @@
-package com.goldcode.naderwalid.benaapp;
+package com.goldcode.naderwalid.benaapp.Activities;
 
 import android.Manifest;
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.graphics.PointF;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +19,7 @@ import com.dlazaro66.qrcodereaderview.QRCodeReaderView;
 
 import com.dlazaro66.qrcodereaderview.QRCodeReaderView.OnQRCodeReadListener;
 import com.example.qr_readerexample.PointsOverlayView;
+import com.goldcode.naderwalid.benaapp.R;
 
 public class QRScannerActivity extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback, OnQRCodeReadListener {
 
