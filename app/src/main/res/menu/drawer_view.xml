@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <group android:checkableBehavior="single">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_if_home_353416"
@@ -13,13 +16,25 @@
             android:id="@+id/nav_news"
             android:icon="@drawable/ic_if_news_103657"
             android:title="الأخبار" />
+    </group>
+
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_who_are_we"
             android:icon="@drawable/ic_if_eye_circle_353411"
             android:title="من نحن" />
+    </group>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_contact_us"
             android:icon="@drawable/ic_if_phone_outline_353432"
             android:title="تواصل معنا" />
     </group>
+
+
 </menu>

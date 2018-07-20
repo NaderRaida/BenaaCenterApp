@@ -25,7 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.SignUpActivity" />
-        <activity android:name=".Activities.HomeActivity"></activity>
+        <activity android:name=".Activities.HomeActivity" />
+        <activity android:name=".Activities.WhoAreWeActivity" />
+        <activity android:name=".Activities.ContactUsActivity"></activity>
     </application>
 
 </manifest>
