@@ -72,7 +72,7 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
     // "points" : points where QR control points are placed
     @Override
     public void onQRCodeRead(String text, PointF[] points) {
-        resultTextView.setText(text);
+//        resultTextView.setText(text);
         pointsOverlayView.setPoints(points);
         code = text;
         qrCodeReaderView.stopCamera();

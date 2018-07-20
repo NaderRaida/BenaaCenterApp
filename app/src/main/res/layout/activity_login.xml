@@ -82,7 +82,7 @@ android:paddingStart="30dp"
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OR"
+        android:text="أو"
         android:layout_marginStart="5dp"
         android:paddingTop="35dp"
         />
