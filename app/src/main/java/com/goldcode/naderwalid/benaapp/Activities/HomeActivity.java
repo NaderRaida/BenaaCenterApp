@@ -52,12 +52,12 @@ public class HomeActivity extends AppCompatActivity {
 
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
-
                         // Add code here to update the UI based on the item selected
                         // For example, swap UI fragments here
                         switch(menuItem.getItemId()){
                             case R.id.nav_home:
                                 viewPager.setCurrentItem(0);
+
 
                                 break;
                             case R.id.nav_news:

@@ -27,7 +27,8 @@
         <activity android:name=".Activities.SignUpActivity" />
         <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.WhoAreWeActivity" />
-        <activity android:name=".Activities.ContactUsActivity"></activity>
+        <activity android:name=".Activities.ContactUsActivity" />
+        <activity android:name=".SplashScreen.SplashActivity"></activity>
     </application>
 
 </manifest>
