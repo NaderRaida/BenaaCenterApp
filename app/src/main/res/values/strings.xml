@@ -4,6 +4,7 @@
     <string name="fragment_home">الرئيسية</string>
     <string name="fragment_news">الأخبار</string>
     <string name="fragment_activities">الغعاليات</string>
+    <string name="splash_text">معاً نحو بناء وتنمية قدرات الشباب الفلسطيني</string>
 
 
 </resources>
