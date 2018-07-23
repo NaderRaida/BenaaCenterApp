@@ -15,7 +15,7 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        overridePendingTransition(R.anim.bounce, R.anim.animation_leave);
+//        overridePendingTransition(R.anim.bounce, R.anim.animation_leave);
 //        ActionBar actionBar =getSupportActionBar();
 //        if(actionBar != null){
 //            actionBar.hide();
@@ -39,7 +39,7 @@ public class SignUpActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intent);
         finish();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_in_right);
+        overridePendingTransition(R.anim.animation_enter, R.anim.slide_out_left);
 
     }
 }

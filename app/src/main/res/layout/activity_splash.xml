@@ -22,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/logo_of_splash"
-        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
         android:gravity="center"
-        android:textColor="@color/white"
         android:text="@string/splash_text"
+        android:textColor="@color/white"
         android:textSize="27sp" />
 
     <Button
