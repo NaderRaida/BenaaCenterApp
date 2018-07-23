@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.goldcode.naderwalid.benaapp.SplashScreen.SplashActivity"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/splash_background"
     >
 
     <ImageView
@@ -14,7 +14,6 @@
         android:layout_height="190dp"
         android:layout_alignLeft="@+id/start_btn"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="62dp"
         android:src="@drawable/logo" />
 
     <TextView
@@ -23,8 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/logo_of_splash"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
+        android:textColor="@color/white"
         android:text="@string/splash_text"
         android:textSize="27sp" />
 
