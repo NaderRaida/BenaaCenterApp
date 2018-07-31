@@ -41,12 +41,14 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
 //        ActionBar actionBar =getSupportActionBar();
 //        actionBar.hide();
         mainLayout = findViewById(R.id.main_layout);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-                == PackageManager.PERMISSION_GRANTED) {
-            initQRCodeReaderView();
-        } else {
-            requestCameraPermission();
-        }
+        initQRCodeReaderView();
+
+//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+//                == PackageManager.PERMISSION_GRANTED) {
+//            initQRCodeReaderView();
+//        } else {
+//            requestCameraPermission();
+//        }
     }
 
 
@@ -82,42 +84,42 @@ public class QRScannerActivity extends AppCompatActivity implements ActivityComp
         finish();
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-        if (requestCode != MY_PERMISSION_REQUEST_CAMERA) {
-            return;
-        }
-
-        if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            Snackbar.make(mainLayout, "Camera permission was granted.", Snackbar.LENGTH_SHORT).show();
-            initQRCodeReaderView();
-        } else {
-            Snackbar.make(mainLayout, "Camera permission request was denied.", Snackbar.LENGTH_SHORT)
-                    .show();
-        }
-    }
-
-
-    private void requestCameraPermission() {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
-            Snackbar.make(mainLayout, "Camera access is required to display the camera preview.",
-                    Snackbar.LENGTH_INDEFINITE).setAction("OK", new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    ActivityCompat.requestPermissions(QRScannerActivity.this, new String[]{
-                            Manifest.permission.CAMERA
-                    }, MY_PERMISSION_REQUEST_CAMERA);
-                }
-            }).show();
-        } else {
-            Snackbar.make(mainLayout, "Permission is not available. Requesting camera permission.",
-                    Snackbar.LENGTH_LONG).show();
-            ActivityCompat.requestPermissions(this, new String[]{
-                    Manifest.permission.CAMERA
-            }, MY_PERMISSION_REQUEST_CAMERA);
-        }
-    }
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+//                                           @NonNull int[] grantResults) {
+//        if (requestCode != MY_PERMISSION_REQUEST_CAMERA) {
+//            return;
+//        }
+//
+//        if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//            Snackbar.make(mainLayout, "Camera permission was granted.", Snackbar.LENGTH_SHORT).show();
+//            initQRCodeReaderView();
+//        } else {
+//            Snackbar.make(mainLayout, "Camera permission request was denied.", Snackbar.LENGTH_SHORT)
+//                    .show();
+//        }
+//    }
+//
+//
+//    private void requestCameraPermission() {
+//        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
+//            Snackbar.make(mainLayout, "Camera access is required to display the camera preview.",
+//                    Snackbar.LENGTH_INDEFINITE).setAction("OK", new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    ActivityCompat.requestPermissions(QRScannerActivity.this, new String[]{
+//                            Manifest.permission.CAMERA
+//                    }, MY_PERMISSION_REQUEST_CAMERA);
+//                }
+//            }).show();
+//        } else {
+//            Snackbar.make(mainLayout, "Permission is not available. Requesting camera permission.",
+//                    Snackbar.LENGTH_LONG).show();
+//            ActivityCompat.requestPermissions(this, new String[]{
+//                    Manifest.permission.CAMERA
+//            }, MY_PERMISSION_REQUEST_CAMERA);
+//        }
+//    }
 
     private void initQRCodeReaderView() {
         View content = getLayoutInflater().inflate(R.layout.qrscanner_content, mainLayout, true);

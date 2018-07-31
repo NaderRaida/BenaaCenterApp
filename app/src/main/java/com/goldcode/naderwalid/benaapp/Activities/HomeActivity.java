@@ -1,7 +1,6 @@
 package com.goldcode.naderwalid.benaapp.Activities;
 
 import android.content.Intent;
-import android.drm.DrmStore;
 import android.graphics.Typeface;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -12,7 +11,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.DragEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +18,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.goldcode.naderwalid.benaapp.Adapters.MyPagerAdapter;
+import com.goldcode.naderwalid.benaapp.Event;
+import com.goldcode.naderwalid.benaapp.Fragments.EventsFragment;
+import com.goldcode.naderwalid.benaapp.New;
 import com.goldcode.naderwalid.benaapp.R;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
@@ -34,6 +43,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         toolbarTitle = findViewById(R.id.custom_toolbar_title);
         toolbarTitle.setText("الرئيسية");
         Typeface type = Typeface.createFromAsset(getAssets(), "Droid_Arabic_Kufi.ttf");
@@ -63,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                switch (position){
+                switch (position) {
                     case 0:
                         toolbarTitle.setText("الرئيسية");
                         break;
@@ -142,7 +152,8 @@ public class HomeActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    private void changeFontOfTabs(Typeface type){
+
+    private void changeFontOfTabs(Typeface type) {
         ViewGroup vg = (ViewGroup) tabLayout.getChildAt(0);
         int tabsCount = vg.getChildCount();
         for (int j = 0; j < tabsCount; j++) {
@@ -156,5 +167,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         }
     }
+
+
 }
 

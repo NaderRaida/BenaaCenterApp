@@ -5,6 +5,24 @@
     <string name="fragment_news">الأخبار</string>
     <string name="fragment_activities">الغعاليات</string>
     <string name="splash_text">معاً نحو بناء وتنمية قدرات الشباب الفلسطيني</string>
+    <array name="news_array">
 
+        <item>الخبر الأول</item>
+        <item>الخبر الثاني</item>
+        <item>الخبر الثالث</item>
+        <item>الخبر الرابع</item>
+        <item>الخبر الخامس</item>
+        <item>الخبر السادس</item>
+        <item>الخبر السابع</item>
+        <item>الخبر الثامن</item>
+        <item>الخبر التاسع</item>
+        <item>الخبر العاشر</item>
+        <item>الخبر الحادي عشر</item>
+        <item>الخبر الثاني عشر</item>
+        <item>الخبر الثالث عشر</item>
+        <item>الخبر الرابع عشر</item>
+        <item>الخبر الخامس عشر</item>
+
+    </array>
 
 </resources>

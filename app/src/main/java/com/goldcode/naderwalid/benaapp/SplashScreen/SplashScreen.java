@@ -41,7 +41,7 @@ public class SplashScreen extends AwesomeSplash {
         configSplash.setTitleTextSize(60f); //float value
         configSplash.setAnimTitleDuration(3000);
         configSplash.setAnimTitleTechnique(Techniques.FlipInX);
-        configSplash.setTitleFont("fonts/abdo-free-1.ttf"); //provide string to your font located in assets/fonts/
+        configSplash.setTitleFont("fonts/abdo_free_1.ttf"); //provide string to your font located in assets/fonts/
          
     }
 

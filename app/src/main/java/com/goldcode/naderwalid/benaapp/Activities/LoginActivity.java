@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.goldcode.naderwalid.benaapp.R;
 
 
-public class  LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     Intent sign_up_btn_intent;
     Intent login_btn_intent;
 
