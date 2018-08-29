@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.goldcode.naderwalid.benaapp.Adapters.EventsRecyclerAdapter;
 import com.goldcode.naderwalid.benaapp.Event;
@@ -43,6 +44,7 @@ ArrayList<Event> jsonEvents = new ArrayList<>();
 
         EventsRecyclerAdapter myRecyclerAdapter = new EventsRecyclerAdapter(getContext(), jsonEvents/*, images*/);
         eventsRecyclerView.setAdapter(myRecyclerAdapter);
+
 
         return view;
     }

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.goldcode.naderwalid.benaapp.Activities.LoginActivity"
-    android:background="@drawable/login_background"
-    >
+    android:background="#40cbf8"
+    android:orientation="vertical"
+    tools:context="com.goldcode.naderwalid.benaapp.Activities.LoginActivity">
 
     <TextView
         android:id="@+id/txt_title"
@@ -18,9 +17,9 @@
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="تسجيل الدخول"
-        android:textSize="30sp"
-        android:textColor="#FFFFFF"
-        android:textAppearance="?android:textAppearanceLarge" />
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#1e1548"
+        android:textSize="30sp" />
 
     <TextView
 
@@ -31,8 +30,10 @@
         android:layout_below="@+id/txt_title"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="79dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="src_over"
         android:text="رقم الجوال :"
-        android:textColor="@color/white"
+        android:textColor="#1e1548"
         android:textSize="22sp" />
 
     <EditText
@@ -44,67 +45,70 @@
         android:layout_marginRight="22dp"
         android:layout_marginStart="20dp"
         android:layout_toLeftOf="@+id/mobile_txt"
-        android:backgroundTint="#c0bbbc"
+        android:backgroundTint="#de5b7b"
         android:hint="@string/mobile_hint"
         android:inputType="phone"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#d2cecf"
-        android:textSize="20sp" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+
+
+        />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/edit_txt_mobile"
-        android:text="دخول"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="130dp"
-        android:textSize="27sp"
         android:background="@drawable/custom_btn_login"
-        />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:id="@+id/linear_layout"
-    android:layout_below="@+id/button"
-android:paddingStart="30dp"
-    >
+        android:text="دخول"
+        android:textColor="#1e1548"
+        android:textSize="27sp" />
 
-    <View
-        android:layout_width="150dp"
-        android:layout_height="3dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button"
-        android:layout_marginTop="43dp"
-        android:background="@drawable/custom_divider"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="أو"
-        android:layout_marginStart="5dp"
-        android:paddingTop="35dp"
-        />
+        android:layout_below="@+id/button"
+        android:orientation="horizontal"
+        android:paddingStart="30dp">
 
-<View
-    android:layout_width="150dp"
-    android:layout_height="3dp"
-    android:text="   "
-    android:layout_marginStart="5dp"
-    android:layout_marginTop="43dp"
-    android:background="@drawable/custom_divider"/>
-</LinearLayout>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/custom_divider" />
 
-<Button
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:text=" تسجيل عضوية"
-    android:layout_below="@+id/linear_layout"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="30dp"
-    android:id="@+id/button2"
-    android:textSize="27sp"
-    android:background="@drawable/custom_btn_signup"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:paddingTop="35dp"
+            android:text="أو" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/custom_divider"
+            android:text="   " />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_btn_signup"
+        android:text=" تسجيل عضوية"
+        android:textColor="#1e1548"
+        android:textSize="27sp" />
 
 </RelativeLayout>

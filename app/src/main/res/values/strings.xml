@@ -5,6 +5,8 @@
     <string name="fragment_news">الأخبار</string>
     <string name="fragment_activities">الغعاليات</string>
     <string name="splash_text">معاً نحو بناء وتنمية قدرات الشباب الفلسطيني</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <array name="news_array">
 
         <item>الخبر الأول</item>

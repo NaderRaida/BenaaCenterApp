@@ -53,13 +53,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (editText.getText().toString().equals("0592766119")) {
+                /*if (editText.getText().toString().equals("0592766119")) {*/
                     login_btn_intent = new Intent(getApplicationContext(), HomeActivity.class);
                     startActivity(login_btn_intent);
                     finish();
-                } else {
+              /*  } else {
                     Toast.makeText(getApplicationContext(), "this no equals", Toast.LENGTH_LONG).show();
                 }
+                */
 
             }
         });
