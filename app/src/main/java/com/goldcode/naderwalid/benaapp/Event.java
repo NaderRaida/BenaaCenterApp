@@ -15,6 +15,8 @@ public class Event  {
 
     public Event() {
 
+
+
     }
 
     public Event(String name, String description, String author/*, String image*/) {
